@@ -1,0 +1,1 @@
+### JWT-Node is a sample application to demonstrate JSON web token based authentication in Node, Express application.
