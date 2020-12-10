@@ -2,7 +2,6 @@ const dotenv =require('dotenv')
 dotenv.config()
 const exphbs = require('express-handlebars')
 const express =require('express')
-// const bodyParser =require ('body-parser')
 const cookiParser =require('cookie-parser')
 const {verify} = require('./middleware')
 const {login,commentsRouteHandler} =require('./controller')
@@ -14,10 +13,7 @@ app.use(express.json());
 //add cookie parser to the app
 app.use(cookiParser())
 
-// app.use(bodyParser.urlencoded({ extended: false })); 
-// app.use(bodyParser.json())
-
-
+// ser view engine as handlebars with .hbs as short file extention
 app.engine('hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs'
